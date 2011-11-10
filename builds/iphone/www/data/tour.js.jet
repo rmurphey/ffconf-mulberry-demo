@@ -1,0 +1,568 @@
+toura.data.local = {
+  "app": {
+    "name": "ffconf",
+    "aboutNodeId": "node-about",
+    "theme": {
+      "name": "default",
+      "settings": {
+        "background-color": "#fff",
+        "font-scheme": "dark",
+        "link-color": "#0000ff",
+        "child-nav-color": "#fff"
+      }
+    },
+    "sharingText": "${name}",
+    "twitterCustomerKey": null,
+    "facebook_api_key": null,
+    "twitter_customer_key": null,
+    "flurry": {
+      "ios": {
+        "api_key": "flurry_ios_api_key"
+      },
+      "android": {
+        "api_key": "flurry_android_api_key"
+      }
+    },
+    "facebookApiKey": null,
+    "os": [
+      "ios",
+      "android"
+    ],
+    "aboutEnabled": true,
+    "twitterCustomerSecret": null,
+    "id": "ffconf",
+    "app_id": {
+      "ios": {
+        "phone": "com.toura.app2.fake.phone",
+        "tablet": "com.toura.app2.fake.tablet"
+      },
+      "android": {
+        "phone": "com.toura.app2_fake"
+      }
+    },
+    "urban_airship": {
+      "android": {
+        "c2dm_sender": "c2dmsender@mail.com",
+        "transport": "c2dm"
+      },
+      "production": {
+        "app_key": "prod_app_key",
+        "app_secret": "prod_app_secret"
+      },
+      "development": {
+        "app_key": "dev_app_key",
+        "app_secret": "dev_app_secret"
+      }
+    },
+    "type": [
+      "tablet",
+      "phone"
+    ],
+    "homeNodeId": "node-home",
+    "twitter_customer_secret": null,
+    "locale": "en-US",
+    "jquery": true,
+    "sharingUrl": "http://toura.com"
+  },
+  "items": [
+    {
+      "type": "text-asset",
+      "contexts": [
+
+      ],
+      "body": "<p class=\"center\">\n<img src=\"media/images/remy.jpeg\" />\n</p>",
+      "name": "home",
+      "id": "text-asset-home"
+    },
+    {
+      "gallery": {
+        "filename": "ff-header.png"
+      },
+      "type": "image",
+      "original": {
+        "filename": "ff-header.png"
+      },
+      "featured": {
+        "filename": "ff-header.png"
+      },
+      "streamed": false,
+      "name": "ff-header",
+      "featuredSmall": {
+        "filename": "ff-header.png"
+      },
+      "id": "image-ff-header",
+      "filename": "ff-header.png"
+    },
+    {
+      "pageController": {
+        "phone": "home-with-header-phone",
+        "tablet": "home-with-header-tablet"
+      },
+      "type": "node",
+      "tabletHeaderImage": {
+        "_reference": "image-ff-header"
+      },
+      "bodyText": {
+        "_reference": "text-asset-home"
+      },
+      "name": "Home",
+      "children": [
+        {
+          "_reference": "node-speakers"
+        },
+        {
+          "_reference": "node-schedule"
+        },
+        {
+          "_reference": "node-twitter"
+        }
+      ],
+      "id": "node-home",
+      "phoneHeaderImage": {
+        "_reference": "image-ff-header"
+      }
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+
+      ],
+      "body": "",
+      "name": "speakers",
+      "id": "text-asset-speakers"
+    },
+    {
+      "gallery": {
+        "filename": "brendan.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "brendan.jpeg"
+      },
+      "featured": {
+        "filename": "brendan.jpeg"
+      },
+      "streamed": false,
+      "name": "brendan",
+      "featuredSmall": {
+        "filename": "brendan.jpeg"
+      },
+      "id": "image-brendan",
+      "filename": "brendan.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-brendan"
+        }
+      ],
+      "body": "<p>Brendan Dawes is Creative Director for magneticNorth, a digital design company\nbased in Manchester, UK. Over the years he’s helped realise projects for a wide\nrange of brands including Sony Records, Diesel, BBC, Fox Kids, Channel 4,\nDisney, Benetton, Kellogg’s, The Tate and Coca-Cola. In 2009 he was listed\namong the top twenty web designers in the world by .net magazine and was\nfeatured in the &ldquo;Design Icon&rdquo; series in Computer Arts.</p>",
+      "name": "brendan",
+      "id": "text-asset-brendan"
+    },
+    {
+      "gallery": {
+        "filename": "glenn.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "glenn.jpeg"
+      },
+      "featured": {
+        "filename": "glenn.jpeg"
+      },
+      "streamed": false,
+      "name": "glenn",
+      "featuredSmall": {
+        "filename": "glenn.jpeg"
+      },
+      "id": "image-glenn",
+      "filename": "glenn.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-glenn"
+        }
+      ],
+      "body": "<p>Glenn Jones is a Founder/Director of Madgex. After 20 years in digital design\nhe is equally as passionate about coding as interaction design. He is currently\naddicted to exploring the semantic web and data portability. His recent side\nprojects include draggables.com, identengine.com and microformatshiv.com.</p>",
+      "name": "glenn",
+      "id": "text-asset-glenn"
+    },
+    {
+      "gallery": {
+        "filename": "jeremy.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "jeremy.jpeg"
+      },
+      "featured": {
+        "filename": "jeremy.jpeg"
+      },
+      "streamed": false,
+      "name": "jeremy",
+      "featuredSmall": {
+        "filename": "jeremy.jpeg"
+      },
+      "id": "image-jeremy",
+      "filename": "jeremy.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-jeremy"
+        }
+      ],
+      "body": "<p>Jeremy Ashkenas works on CoffeeScript, Backbone.js, Underscore.js, Docco, and\nJammit, among other opensource projects.He is also part of the Interactive News\nteam at the New York Times, as well as the lead developer of DocumentCloud,\nhelping news organisations analyise and publish the primary source documents\nbehind the news.</p>",
+      "name": "jeremy",
+      "id": "text-asset-jeremy"
+    },
+    {
+      "gallery": {
+        "filename": "marcin.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "marcin.jpeg"
+      },
+      "featured": {
+        "filename": "marcin.jpeg"
+      },
+      "streamed": false,
+      "name": "marcin",
+      "featuredSmall": {
+        "filename": "marcin.jpeg"
+      },
+      "id": "image-marcin",
+      "filename": "marcin.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-marcin"
+        }
+      ],
+      "body": "<p>Marcin Wichary has been coding HTML by hand since 1994 and still finds it\nfascinating today as a senior user experience designer and developer at Google.\nHis recent projects include Google Chrome and Google Instant; he also\nprogrammed some of the popular homepage doodles including Pac-Man and Jules\nVerne.</p>",
+      "name": "marcin",
+      "id": "text-asset-marcin"
+    },
+    {
+      "gallery": {
+        "filename": "marijn.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "marijn.jpeg"
+      },
+      "featured": {
+        "filename": "marijn.jpeg"
+      },
+      "streamed": false,
+      "name": "marijn",
+      "featuredSmall": {
+        "filename": "marijn.jpeg"
+      },
+      "id": "image-marijn",
+      "filename": "marijn.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-marijn"
+        }
+      ],
+      "body": "<p>Author of Eloquent JavaScript and main developer of CodeMirror. Marijn\nHaverbeke has been trying to get out of web programming for over ten years, but\nweb programming just kept on getting more interesting. Currently working on\nMozilla’s new programming language, Rust.</p>",
+      "name": "marijn",
+      "id": "text-asset-marijn"
+    },
+    {
+      "gallery": {
+        "filename": "nicholas.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "nicholas.jpeg"
+      },
+      "featured": {
+        "filename": "nicholas.jpeg"
+      },
+      "streamed": false,
+      "name": "nicholas",
+      "featuredSmall": {
+        "filename": "nicholas.jpeg"
+      },
+      "id": "image-nicholas",
+      "filename": "nicholas.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-nicholas"
+        }
+      ],
+      "body": "<p>Nicholas C. Zakas worked at Yahoo! for almost five years, building and defining\nfront-end strategy for some of Yahoo’s largest sites. Nicholas is also the\nauthor of several books, including High Performance JavaScript, Professional\nJavaScript for Web Developers, and Professional Ajax.</p>",
+      "name": "nicholas",
+      "id": "text-asset-nicholas"
+    },
+    {
+      "gallery": {
+        "filename": "phil.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "phil.jpeg"
+      },
+      "featured": {
+        "filename": "phil.jpeg"
+      },
+      "streamed": false,
+      "name": "phil",
+      "featuredSmall": {
+        "filename": "phil.jpeg"
+      },
+      "id": "image-phil",
+      "filename": "phil.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-phil"
+        }
+      ],
+      "body": "<p>Phil is a JavaScript developer who has been developing web applications since\nthe late 90s. These days, he’s the Technical Director for The Team. The Team is\nan agency based in London, he focusses more on technical architecture and\nworking closely with developers, designers, and UX designers, than writing\ncode. He loves that role, but just can’t keep his sticky fingers away from\ncode, which leads him to various small experiments and side projects. In his\nprevious roles at places like Verisign, VMware and BT, Phil spent much time\nespousing the value of adopting unobtrusive JavaScript, Open Web standards and\nopen source technologies.</p>",
+      "name": "phil",
+      "id": "text-asset-phil"
+    },
+    {
+      "gallery": {
+        "filename": "rik.jpeg"
+      },
+      "type": "image",
+      "original": {
+        "filename": "rik.jpeg"
+      },
+      "featured": {
+        "filename": "rik.jpeg"
+      },
+      "streamed": false,
+      "name": "rik",
+      "featuredSmall": {
+        "filename": "rik.jpeg"
+      },
+      "id": "image-rik",
+      "filename": "rik.jpeg"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+        {
+          "type": "image",
+          "node": "node-speakers",
+          "id": "image-rik"
+        }
+      ],
+      "body": "<p>Rik Arends is co-founder and CTO of Cloud9 IDE, Inc (previously Ajax.org).\nEarly to recognise the shift between compiled and dynamic languages, he worked\non language transcompilers, in-browser graphics, optimized API designs, NoSQL\ndatabase architecture and high performance webservice driven applications. As\nan early believer of the browser as the winning application runtime, Rik\nfocussed his career on making the web a better place for developers. Rik now\noversees the technical vision and development of Cloud9 IDE.</p>",
+      "name": "rik",
+      "id": "text-asset-rik"
+    },
+    {
+      "images": [
+        {
+          "image": {
+            "_reference": "image-brendan"
+          },
+          "caption": {
+            "_reference": "text-asset-brendan"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-glenn"
+          },
+          "caption": {
+            "_reference": "text-asset-glenn"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-jeremy"
+          },
+          "caption": {
+            "_reference": "text-asset-jeremy"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-marcin"
+          },
+          "caption": {
+            "_reference": "text-asset-marcin"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-marijn"
+          },
+          "caption": {
+            "_reference": "text-asset-marijn"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-nicholas"
+          },
+          "caption": {
+            "_reference": "text-asset-nicholas"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-phil"
+          },
+          "caption": {
+            "_reference": "text-asset-phil"
+          }
+        },
+        {
+          "image": {
+            "_reference": "image-rik"
+          },
+          "caption": {
+            "_reference": "text-asset-rik"
+          }
+        }
+      ],
+      "pageController": {
+        "phone": "images-and-text-phone",
+        "tablet": "images-and-text-tablet"
+      },
+      "type": "node",
+      "bodyText": {
+        "_reference": "text-asset-speakers"
+      },
+      "parent": {
+        "_reference": "node-home"
+      },
+      "name": "Speakers",
+      "id": "node-speakers"
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+
+      ],
+      "body": "<table class=\"schedule\">\n  <thead>\n    <tr>\n      <th width=\"25%\">Time</th>\n      <th>Speaker</th>\n      <th>Schedule</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>09:00</time> – <time>09:15</time></span>\n      </td>\n      <td />\n      <td><h3>Registration</h3></td>\n    </tr>\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>09:40</time> – <time>09:50</time></span>\n      </td>\n      <td />\n      <td><h3>Opening Remarks</h3></td>\n    </tr>\n    <tr>\n      <td>\n        <span class=\"timeslot\"><time>09:50</time> – <time>10:30</time></span>\n        Jeremy Ashkenas\n      </td>\n      <td><img width=\"80\" src=\"media/images/jeremy.jpeg\" alt=\"Jeremy Ashkenas\" /></td>\n      <td>\n        <h3>CoffeeScript Design Decisions</h3>\n        <p>Although limited by what's possible to express in simple JavaScript, CoffeeScript tries to provide pieces of clear syntax that fit together in harmony. We'll dive into the rationale behind some of CoffeeScript's language choices to look at the trade offs involved, and both the why's and why not's.\n      </p></td>\n    </tr>\n    <tr>\n      <td>\n        <span class=\"timeslot\"><time>10:30</time> – <time>11:10</time></span>\n        Phil Hawksworth\n      </td>\n      <td><img width=\"80\" src=\"media/images/phil.jpeg\" alt=\"Phil Hawksworth\" /></td>\n      <td>\n        <h3>Excessive Enhancement - Are we taking proper care of the Web?</h3>\n        <p>We all love to see exciting and innovative \"interface shizzle\" driven\nby JavaScript and the ever increasing rendering capabilities of modern\nbrowsers, but are we getting these at the expense of the Web?  This\ntalk will explore the good, the bad, and the fugly of rich interfaces,\nwhile examining how and why we should take care not to damage the Web.\n      </p></td>\n    </tr>\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>11:10</time> – <time>11:40</time></span>\n      </td>\n      <td />\n      <td><h3>Coffee Break</h3></td>\n    </tr>\n    <tr>\n      <td>\n        <span class=\"timeslot\"><time>11:40</time> – <time>12:20</time></span>\n        Marijn Haverbeke\n      </td>\n      <td><img width=\"80\" src=\"media/images/marijn.jpeg\" alt=\"Marijn Haverbeke\" /></td>\n      <td>\n        <h3>Respectable code-editing in the browser</h3>\n        <p>The past few years have seen the rise and maturation of several full-blown in-browser code editors: CodeMirror, ACE (Cloud9), and Orion. No longer must we mortify users with huge, clunky text areas when they need to edit some CSS or script. This talk will go over the current state of JavaScript-based editors, and describe the implementation of CodeMirror in some depth.\n      </p></td>\n    </tr>\n    <tr>\n      <td>\n        <span class=\"timeslot\"><time>12:20</time> – <time>13:00</time></span>\n        Rik Arends\n      </td>\n      <td><img width=\"80\" src=\"media/images/rik.jpeg\" alt=\"Rik Arends\" /></td>\n      <td>\n        <h3>How we Architected Cloud9 IDE for scale on NodeJS</h3>\n        <p>Building and scaling a web based IDE is a big challenge, and doing this on Node.JS gave us a lot of unique challenges.\nCloud9 is built using a full Ajax client, and besides Node.JS utilizes a full set of new HTML5 features and offline support.\nIn this talk Rik will go through a quick demo of Cloud9 IDE, and then into the unique architecture and design decisions that we made to build Cloud9 IDE. This will be of interest to medium to advanced level programmers, who want to know more about Cloud9 IDE, Node.JS and scalable app development.\n      </p></td>\n    </tr>\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>13:00</time> – <time>14:30</time></span>\n      </td>\n      <td />\n      <td><h3>Lunch Time</h3></td>\n    </tr>\n     <tr>\n      <td>\n        <span class=\"timeslot\"><time>14:30</time> – <time>15:10</time></span>\n        Nicholas Zakas\n      </td>\n      <td><img width=\"80\" src=\"media/images/nicholas.jpeg\" alt=\"Nicholas Zakas\" /></td>\n      <td>\n        <h3>Scalable JavaScript Application Architecture</h3>\n        <p>Building large web applications with dozens of developers is a difficult task.  Organising the engineers around a common goal is one thing, but organising your code so that people can work efficiently is another. Many large applications suffer from growing pains after just a few months in production due to poorly designed JavaScript with unclear upgrade and extension paths.\nLearn the tips, tricks, and techniques that allowed large sites such as My Yahoo! and the Yahoo! homepage to continue to grow, scale, and change over time without throwing away previous work.\nThis talk isn’t specific to any JavaScript library, rather, it gives you new ways to apply the libraries you’re already using. The principles of good, loosely-coupled design apply to any system, and you’ll learn how this can help your application today.\n      </p></td>\n    </tr>\n     <tr>\n      <td>\n        <span class=\"timeslot\"><time>15:10</time> – <time>15:50</time></span>\n        Glenn Jones\n      </td>\n      <td><img width=\"80\" src=\"media/images/glenn.jpeg\" alt=\"Glenn Jones\" /></td>\n      <td>\n        <h3>Beyond the page</h3>\n        <p>The latest browser APIs now make it possible to redesign how your web pages interact with other applications. Web pages are too often little islands that fail to play well with the wider user interfaces of our devices. This talk will explore the possibilities from Drag and Drop to Web Intents, demonstrating how to make web pages more equal in the world of applications.\n      </p></td>\n    </tr>\n\n\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>15:50</time> – <time>16:20</time></span>\n      </td>\n      <td />\n      <td><h3>Coffee Break</h3></td>\n    </tr>\n     <tr>\n      <td>\n        <span class=\"timeslot\"><time>16:20</time> – <time>17:00</time></span>\n        Brendan Dawes\n      </td>\n      <td><img width=\"80\" src=\"media/images/brendan.jpeg\" alt=\"Brendan Dawes\" /></td>\n      <td>\n        <h3>Beyond The Planet Of The Geeks</h3>\n        <p>Brendan Dawes is a big-a-geek as anyone; he loves nothing more than making and experimenting with all the wondrous technologies, tools, toys and other magical things that constantly surround us. But the thing is, geeks never changed anything, well not in a real-world sense. Making cutting edge Javascript demos with the likes of Canvas or SVG are all well and good but for things to really change and have an impact stuff needs to move beyond the confines of the world of the geek and become common place, the norm and paradoxically, invisible!\n        </p><p>In this session Brendan takes you through his process of experimentation with purpose and how he and the team at magneticNorth are now actively using these exciting new technolgies on real client work that goes beyond *bouncing ball* demoes to create new interfaces and new ways to explore.\n      </p></td>\n    </tr>\n\n     <tr>\n      <td>\n        <span class=\"timeslot\"><time>17:00</time> – <time>17:40</time></span>\n        Marcin Wichary\n      </td>\n      <td><img width=\"80\" src=\"media/images/marcin.jpeg\" alt=\"Marcin Wichary\" /></td>\n      <td>\n        <h3>You gotta do what you gotta do</h3>\n        <p>HTML is incredible and powerful. HTML is a mess. Marcin, a user experience designer at Google, will talk about the experience working on interactive doodles like Pac-Man, Jules Verne and Les Paul. How do we put together things that will be seen by hundreds millions of people? What did we get right? What did we learn the hard way? What rules were broken and what contraptions put together? (Oh, and make sure to bring your phones!)\n      </p></td>\n    </tr>\n\n    <tr class=\"info\">\n      <td>\n        <span class=\"timeslot\"><time>17:40</time> – <time>17:50</time></span>\n      </td>\n      <td />\n      <td><h3>Closing Remarks</h3></td>\n    </tr>\n    <tr>\n      <td>\n        <span class=\"timeslot\"><time>19:00</time> – <span>late</span></span>\n      </td>\n      <td />\n      <td><h3>After Party @ <a href=\"http://ffconf.com/party\">The Loft</a></h3></td>\n    </tr>\n\n  </tbody>\n</table>",
+      "name": "schedule",
+      "id": "text-asset-schedule"
+    },
+    {
+      "pageController": {
+        "phone": "default",
+        "tablet": "default"
+      },
+      "type": "node",
+      "tabletHeaderImage": {
+        "_reference": "image-ff-header"
+      },
+      "bodyText": {
+        "_reference": "text-asset-schedule"
+      },
+      "parent": {
+        "_reference": "node-home"
+      },
+      "name": "Schedule",
+      "id": "node-schedule",
+      "phoneHeaderImage": {
+        "_reference": "image-ff-header"
+      }
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+
+      ],
+      "body": "<h1 id=\"page-body-text-goes-here-optional\">page body text goes here (optional)</h1>",
+      "name": "twitter",
+      "id": "text-asset-twitter"
+    },
+    {
+      "type": "data-asset",
+      "value": "{\"term\":\"#fullfrontalconf\",\"type\":\"twitter\"}",
+      "name": "twitter",
+      "dataType": "twitter",
+      "id": "data-asset-twitter",
+      "filename": "twitter.yml"
+    },
+    {
+      "pageController": {
+        "phone": "twitter",
+        "tablet": "twitter"
+      },
+      "type": "node",
+      "tabletHeaderImage": {
+        "_reference": "image-ff-header"
+      },
+      "dataAssets": [
+        {
+          "dataAsset": {
+            "_reference": "data-asset-twitter"
+          }
+        }
+      ],
+      "bodyText": {
+        "_reference": "text-asset-twitter"
+      },
+      "parent": {
+        "_reference": "node-home"
+      },
+      "name": "Full Frontal on Twitter",
+      "id": "node-twitter",
+      "phoneHeaderImage": {
+        "_reference": "image-ff-header"
+      }
+    },
+    {
+      "type": "text-asset",
+      "contexts": [
+
+      ],
+      "body": "<p>Created with <a href=\"http://mulberry.toura.com\">Toura Mulberry</a>.</p>",
+      "name": "about",
+      "id": "text-asset-about"
+    },
+    {
+      "pageController": {
+        "phone": "default",
+        "tablet": "default"
+      },
+      "type": "node",
+      "bodyText": {
+        "_reference": "text-asset-about"
+      },
+      "name": "About",
+      "id": "node-about"
+    }
+  ]
+};

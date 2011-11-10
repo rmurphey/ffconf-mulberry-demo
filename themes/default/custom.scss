@@ -1,0 +1,20 @@
+/* override theme defaults in this file */
+.page {
+  background-color: #fafafa;
+}
+
+.page-node-schedule table {
+  font-size: 12px;
+
+  th {
+    text-align: left;
+  }
+
+  td, th {
+    padding: 5px;
+  }
+}
+
+.page-node-home .center {
+  text-align: center;
+}
