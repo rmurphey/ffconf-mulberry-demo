@@ -49,12 +49,12 @@ type:
 jquery: true
 
 # enter your facebook api key here in order to enable facebook features
-facebook_api_key:
+facebook_api_key: 127698340576375
 
 # your twitter api key must be authorized for xauth for twitter features
 # to work. see https://dev.twitter.com/docs/oauth/xauth
-twitter_customer_key:
-twitter_customer_secret:
+twitter_customer_key: YijQL8qsVm2iU9cxEm2bIQ
+twitter_customer_secret: ySttqteBUCs6LOtLg9dsYrbp6PRK4moqbdZDeut9Y
 
 # You must replace these with your own app id
 # for each targeted os/device type

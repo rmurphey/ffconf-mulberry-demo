@@ -1,5 +1,4 @@
 dojo.provide('client.components.Twitter');
-dojo.require('dojo.date.locale');
 
 mulberry.component('Twitter', {
   componentTemplate : dojo.cache('client.components', 'Twitter/Twitter.haml'),
@@ -7,35 +6,30 @@ mulberry.component('Twitter', {
 
   init : function() {
     var data = this.baseObj.getData('twitter');
-
-    $.ajax('http://search.twitter.com/search.json?q=' + data.term, {
-      dataType : 'jsonp',
-      success : $.proxy(this, '_onLoad')
-    });
+    console.log('DATA IS', data);
+    console.log('DOING IT', client.data.Twitter);
+    client.data.Twitter.search(data.term)
+      .then(dojo.hitch(this, '_onLoad'));
   },
 
   _onLoad : function(data) {
-    var tweets = data.results,
-        tpl = mulberry.haml(this.tweetTemplate),
-        html = $.map(tweets, function(tweet) {
-          tweet.link = 'http://twitter.com/capitoljs/status/' + tweet.id_str;
-
-          tweet.created_at = dojo.date.locale.format(
-            new Date(tweet.created_at), {
+    var tpl = mulberry.haml(this.tweetTemplate),
+        tweets = dojo.map(data.results, function(t) {
+          t.date = dojo.date.locale.format(
+            new Date(t.created_at), {
               datePattern : 'EEE',
               timePattern : 'h:mm a'
             }
           );
 
-          tweet.text = tweet.text.replace(
+          t.text = t.text.replace(
             /@(\S+)/g,
             "<a href='http://twitter.com/#!/$1'>@$1</a>"
           );
 
-          return tpl(tweet);
-        }).join('');
+          return t;
+        });
 
-    this.$domNode.html(html);
-    this.region.refreshScroller();
+    this.populate(tpl, tweets);
   }
 });
